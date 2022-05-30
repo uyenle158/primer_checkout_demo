@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #checkout-container {
+        display: flex;
+        flex-direction: column;
+        padding: 12px 24px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://sdk.primer.io/web/v2.0.0/Checkout.css"
+    />
+    <script
+      src="https://sdk.primer.io/web/v2.0.0/Primer.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div id="root-page">
+      <div id="order-summary">
+        <div id="wrapper">
+          <div id="container">
+            <div id="left-col">
+              <div id="left-col-cont">
+                <h2>Order Summary</h2>
+                <div id="item-list"></div>
+                <p id="total">Total</p>
+                <h4 id="total-price"></h4>
+              </div>
+            </div>
+
+            <div id="checkout-container"></div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <!-- Include your script to initialize the SDK and send data to Primer -->
+    <script src="/static/order_summary.js"></script>
+    <script src="/static/client.js"></script>
+  </body>
+</html>

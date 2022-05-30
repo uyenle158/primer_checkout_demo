@@ -1,0 +1,154 @@
+body {
+  display: grid;
+  place-items: center;
+
+  background: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#wrapper {
+  height: 100vh;
+  
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+}
+
+#container {
+  background: white;
+  height: 600px;
+  min-width: 600px;
+  width: 1000px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 3px 15px 	-1px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 15px -1px rgba(0,0,0,0.2);
+}
+
+
+
+#left-col {
+  width: 40%;
+  min-width: 240px;
+  height: 100%;
+  float: left;
+  /* background: #34495e; */
+  /* background: #008080; */
+  background: #ffa9a0;
+}
+
+
+#right-col {
+  width: calc(60% - 50px);
+  min-width: 310px;
+  height: 100%;
+  margin: 20px 25px;
+  float: right;
+}
+
+#checkout-container {
+  /* overflow: hidden; */
+  /* margin: 32px; */
+  /* width: 500px; */
+  /* padding: 32px; */
+
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+
+  /* right col */
+  width: calc(60% - 100px);
+  /* min-width: 310px; */
+  /* height: 100%; */
+  margin: 20px 25px;
+  float: right;
+}
+
+
+
+#left-col-cont {
+  margin: 20px 25px;
+  color: white;
+  
+}
+#left-col-cont.h2 {
+  margin: 25px 0 0 0;
+}
+
+div.item {
+  margin: 30px 0;
+  clear: both;
+}
+
+div.item .img-col {
+  width: 30%;
+  float: left;
+  
+}
+div.item .img-col img {
+  width: 100%;
+  max-height: 100px;
+}
+div.item .meta-col {
+  width: 70%;
+  float: right;
+}
+
+div.item .meta-col h3 {
+  font-size: 0.9em;
+  margin: 10px 0 0 5px;
+}
+
+div.item .meta-col p {
+  font-size: 0.9em;
+  margin: 5px 0 0 5px;
+  opacity: .8;
+}
+
+div.item .price {
+  float: left;
+}
+
+div.item .quanity {
+  float: right;
+}
+  
+p#total {
+  text-transform: uppercase;
+  text-align: left;
+  /* font-size: 0.7em; */
+  opacity: .8;
+  margin: 115px 0 5px 0;
+}
+  
+h4#total-price {
+  text-align: left;
+  font-size: 2em;
+  margin: 0;
+  
+  
+}
+
+/* h4#total-price span { */
+  /* color: #1c2834; */
+/* } */
+
+#payment-status {
+  margin-top: 120px;
+  padding: 12px;
+  background-color: white;
+  border: 5px;
+  border-radius: 8px;
+  align-content: center;
+}
+
+#payment-status span {
+  color: black;
+  align-self: center;
+}
